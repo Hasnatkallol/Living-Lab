@@ -20,6 +20,17 @@
       .sora{
          font-family: "Sora", serif;
      }
+     @media screen and (max-width:576px) {
+        nav{
+            display: none;
+        }
+        #mobile{
+            display: block;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+     }
    
     </style>
     <script>
@@ -37,13 +48,14 @@
 </head>
 <body>
     <!-- Header Part -->
-     <header>
-        <nav class="w-11/12 mx-auto">
-         <div class="flex justify-between">
+      <section class="bg-[linear-gradient(180.00deg,rgb(255,255,255),rgb(239,235,227)100%)]">  
+        <header class=" ">
+        <nav class=" pt-3 w-11/12 mx-auto">
+         <div class="flex justify-between ">
             <div>
                 <img src="./c2-assets/logo-header.png" alt="">
             </div>
-            <div>
+            <div class="mt-1">
                 <ul class="flex space-x-4">
                     <li><a class="sora text font-normal text-xl text-[rgb(17,17,17)]" href="">Product</a></li>
                     <li><a class="sora text font-normal text-xl text-[rgb(17,17,17)]" href="">Services</a></li>
@@ -51,16 +63,37 @@
                 </ul>
             </div>
             <div class="flex space-x-4">
-                <i  class="fa-solid mt-[5px] p-0 fa-magnifying-glass"></i>
-                <i class="fa-solid mt-[5px] fa-cart-shopping"></i>
-                <button class="mb-[37px] sora text font-normal text-xl text-[rgb(17,17,17)]">Login</button>
-                <button class="mb-[37px] sora text font-normal text-xl text-[rgb(17,17,17)]">Register</button>
+                <i  class="fa-solid mt-[15px] p-0 fa-magnifying-glass"></i>
+                <i class="fa-solid mt-[15px] fa-cart-shopping"></i>
+                <button class="mb-[37px] sora text font-normal text-xl text-[rgb(17,17,17)] border rounded-md border-[rgb(23,152,0)] bg-white px-5 py-2 hover:bg-[rgb(23,152,0)] hover:text-white">Login</button>
+                <button class="mb-[37px] sora text font-normal text-xl px-3 py-2 rounded-md text-white bg-[rgb(23,152,0)]">Register</button>
             </div>
          </div>
         </nav>
+        <div id="mobile" class="hidden w-11/12 mx-auto">
+            <img src="./c2-assets/logo-footer.png" alt="">
+            <i class="fa-solid fa-bars mt-5 pr-4 text-3xl"></i>
+        </div>
+          <hr class="h-1 mt-4 w-full block lg:hidden bg-[rgb(23,152,0)] z-10">
 
-     </header>
 
+        <!-- Banner part -->
+         <div class="flex flex-col items-center w-11/12 mx-auto">
+             <div class="my-10">
+                <h1 class="text-[rgb(17,17,17)] sora font-semibold text-[2rem] lg:text-[3.5rem] text-center w-[390px] lg:w-[827px]">Freshness <span class="text-[rgb(23,152,0)]">You Can Count</span> 
+                     On, Prices You’ll Love!</h1>
+                     <p class="text-center text-[rgb(17,17,17)] sora font-light text-[1rem] lg:text-xl">
+                        Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!
+                     </p>
+             </div>
+             <div class="lg:h-[840px] mb-[100px]">
+                <img src="./c2-assets/hero-vegetables.png" alt="">
+             </div>
+         </div>
+
+        </header>
+    </section>
+    
      <!-- Main Part -->
       <main>
 
