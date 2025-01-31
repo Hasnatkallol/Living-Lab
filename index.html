@@ -27,6 +27,14 @@
      .poppins {
          font-family: "Poppins", serif;
      }
+     .animation{
+      animation:pulse 3s infinite;
+     }
+     @keyframes pulse {
+      0% { transform: scale(1);}
+      50% { transform: scale(1.1);}
+      100% { transform: scale(1);}
+     }
 
      @media screen and (max-width:576px) {
         nav{
@@ -88,9 +96,9 @@
         <!-- Banner part -->
          <div class="flex flex-col items-center w-11/12 mx-auto">
              <div class="my-10">
-                <h1 class="text-[rgb(17,17,17)] sora font-semibold text-[2rem] lg:text-[3.5rem] text-center w-[390px] lg:w-[827px]">Freshness <span class="text-[rgb(23,152,0)]">You Can Count</span> 
+                <h1 class="animation text-[rgb(17,17,17)] sora font-semibold text-[2rem] lg:text-[3.5rem] text-center w-[390px] lg:w-[827px]">Freshness <span class="text-[rgb(23,152,0)]">You Can Count</span> 
                      On, Prices You’ll Love!</h1>
-                     <p class="text-center text-[rgb(17,17,17)] sora font-light text-[1rem] lg:text-xl">
+                     <p class="text-center text-[rgb(17,17,17)] sora font-light text-[1rem] lg:text-xl mt-[10px]">
                         Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!
                      </p>
              </div>
@@ -361,7 +369,7 @@
           </section>
 
           <!-- Reviews section  -->
-           <section class="lg:w-11/12 mx-auto mt-24 rounded-lg h-[340px] lg:h-[540px]">
+           <section class="lg:w-11/12 mx-auto mt-24 rounded-lg h-[340px] lg:h-[540px] px-[20px]">
             <h1 class="text-[rgb(23,152,0)] text-2xl lg:text-4xl font-semibold sora text-justify mb-12">What Our Customers Says</h1>    
 
             <!-- carousel -->
@@ -444,14 +452,8 @@
                   <a href="#slide1" class="btn btn-circle">❯</a>
                 </div>
               </div>
-
-             
-
-             
+       
             </div>
-
-            
-
            </section>
           
 
